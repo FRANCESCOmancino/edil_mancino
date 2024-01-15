@@ -1,0 +1,89 @@
+:root{
+    --primary: #175286;
+    --secondary: #ACAEB1;
+    --third: #68B4BE;
+}
+
+
+
+.primary{
+    color: var(--primary) !important;
+}
+.secondary{
+    color: var(--secondary) !important;
+}
+.third{
+    color: var(--third) !important;
+}
+
+.bgPrimary{
+    background-color: var(--primary);
+}
+.bgSecondary{
+    background-color: #ACAEB1;
+}
+.bgThird{
+    background-color: var(--third);
+}
+
+
+
+
+
+.container-ul-navbar{
+    width: 100%;
+}
+
+.whidtFineNav{
+    width: 180px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .dnone-mobile{
+        display: none !important;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .dnone-tablet{
+        display: none !important;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* d-none icone */
+@media screen and (max-width: 991px){
+    .dnone-navbar{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 991px){
+    .icone{
+        display: none !important;
+    }
+}
