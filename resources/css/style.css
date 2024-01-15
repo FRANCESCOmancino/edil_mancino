@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
 :root{
-    --primary: #175286;
-    --secondary: #ACAEB1;
+    --primary: #ACAEB1;
+    --secondary: #242F43;
     --third: #68B4BE;
 }
 
@@ -20,16 +23,30 @@
     background-color: var(--primary);
 }
 .bgSecondary{
-    background-color: #ACAEB1;
+    background-color: var(--secondary);
 }
 .bgThird{
     background-color: var(--third);
 }
+.bgPrimaryT{
+    background-color: #acaeb179;
+
+}
+
+/*! Transizioni */
+
+.transition05{
+    transition: 0.5s;
+}
+
+.transition1{
+    transition: 1s;
+}
 
 
 
 
-
+/*! navbar */
 .container-ul-navbar{
     width: 100%;
 }
@@ -37,8 +54,37 @@
 .whidtFineNav{
     width: 180px;
 }
+.ancorNavbar{
+    border-bottom: 3px solid transparent;
+}
+
+:hover.ancorNavbar{
+    border-bottom: 3px solid #4f9ba5;
+}
 
 
+/*! header */
+.bgHeader {
+    background-image: url('/public/image/bgHeader.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+
+.title{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*! sezione 1 */
+
+.bgStoria{
+    background-image: url('/public/image/storia.png');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
 
 
 
@@ -56,12 +102,11 @@
     .dnone-tablet{
         display: none !important;
     }
-
+    
 }
 
 
 @media screen and (min-width: 768px){
-    
 }
 
 
@@ -80,10 +125,19 @@
     .dnone-navbar{
         display: none !important;
     }
+    
 }
 
 @media screen and (min-width: 991px){
     .icone{
         display: none !important;
+    }
+
+    .chiSiamo{
+        box-shadow: 30px -30px var(--third);
+    }
+    
+    .bgStoria:hover{
+    transform: scale(1.08);   
     }
 }
